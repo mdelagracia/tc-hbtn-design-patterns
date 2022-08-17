@@ -5,7 +5,7 @@ public class CalculadorSalarioService {
     private CalculadorSalarioService() {
     }
 
-    static CalculadorSalarioService instancia;
+    private static CalculadorSalarioService instancia;
 
     public static CalculadorSalarioService getCalculadorSalarioService(){
        if(instancia == null){
