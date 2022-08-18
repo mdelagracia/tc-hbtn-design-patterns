@@ -17,11 +17,11 @@ public class Pedido {
 
     @Override
     public String toString() {
-        String result = "\tFora da Caixa: \n";
+        String result = "\tFora da Caixa:\n";
         for (ItemPedido item: itensForaCaixa) {
             result += "\t\t- " + item.getTipo() + " " + item.getNome() + "\n";
         }
-        result += "\tDentro da Caixa: \n";
+        result += "\tDentro da Caixa:\n";
         for(ItemPedido item: itensDentroCaixa) {
             result += "\t\t- " + item.getTipo() + " " + item.getNome() + "\n";
         }
