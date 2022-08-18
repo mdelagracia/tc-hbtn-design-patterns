@@ -17,13 +17,13 @@ public class Pedido {
 
     @Override
     public String toString() {
-        String result = "Fora da Caixa: \n";
+        String result = "\tFora da Caixa: \n";
         for (ItemPedido item: itensForaCaixa) {
-            result += "        - " + item.getTipo() + " " + item.getNome() + "\n";
+            result += "\t\t- " + item.getTipo() + " " + item.getNome() + "\n";
         }
-        result += "Dentro da Caixa: \n";
+        result += "\tDentro da Caixa: \n";
         for(ItemPedido item: itensDentroCaixa) {
-            result += "        - " + item.getTipo() + " " + item.getNome() + "\n";
+            result += "\t\t- " + item.getTipo() + " " + item.getNome() + "\n";
         }
         return result;
     }
