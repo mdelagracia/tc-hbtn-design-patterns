@@ -66,7 +66,7 @@ public class Impressao {
     @Override
     public String toString() {
 
-        return "total de paginas:" + paginasTotais + ", total coloridas:" + paginasColoridas + ", total preto e branco:" + (paginasTotais - paginasColoridas) + ", " + FrenteVerso() + "total: R$" + String.format("%.2f", calcularTotal());
+        return "total de paginas: " + paginasTotais + ", total coloridas: " + paginasColoridas + ", total preto e branco: " + (paginasTotais - paginasColoridas) + ", " + FrenteVerso() + "total: R$ " + String.format("%.2f", calcularTotal());
     }
 
     public String FrenteVerso(){
@@ -81,7 +81,7 @@ public class Impressao {
         if (isEhFrenteVerso()) {
             total = ((paginasTotais - paginasColoridas) * getValorPretoBrancoFrenteVerso()) + (paginasColoridas * getValorColoridasFrenteVerso());
         } else {
-            total = ((paginasTotais - paginasColoridas)* getValorPretoBrancoFrenteApenas()) + (paginasColoridas * getValorPretoBrancoFrenteApenas());
+            total = ((paginasTotais - paginasColoridas) * getValorPretoBrancoFrenteApenas()) + (paginasColoridas * getValorColoridasFrenteApenas());
         }
         return total;
     }
