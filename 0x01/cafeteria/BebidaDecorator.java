@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class BebidaDecorator extends Bebida{
+public class BebidaDecorator extends Bebida {
 
     private Bebida bebidaDecorada;
 
